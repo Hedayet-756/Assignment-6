@@ -66,7 +66,7 @@ const NavBar = () => {
             <div className='flex md:gap-3 lg:gap-4'>
               <button className='cursor-pointer transition-all'><span><ShoppingCart></ShoppingCart></span></button>
               <button className='cursor-pointer transition-all'>Login</button>
-              <button className='btn bg-linear-to-r from-purple-800 to-pink-500 rounded-full'>Get Started</button>
+              <button className='btn bg-linear-to-r from-purple-800 to-pink-500 rounded-full text-white'>Get Started</button>
             </div>
             
             

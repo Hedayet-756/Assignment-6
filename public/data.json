@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Basic resume builder for beginners with simple templates.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Export to PDF"
+    ],
+    "icon": "/social-media.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with ATS-friendly templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF & Word",
+      "Cover letter builder"
+    ],
+    "icon": "/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Booster Pack",
+    "description": "Complete career toolkit with resume, cover letter, and portfolio builder.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Portfolio builder",
+      "LinkedIn optimization",
+      "Resume analytics",
+      "Priority support"
+    ],
+    "icon": "/operation.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Pro",
+    "description": "Create stunning online portfolios بسهولة.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Custom domain",
+      "Drag & drop builder",
+      "SEO optimization",
+      "Responsive design"
+    ],
+    "icon": "/Vector.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Kit",
+    "description": "Practice interviews with AI-powered feedback.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Mock interviews",
+      "AI feedback",
+      "Common Q&A",
+      "Performance tracking"
+    ],
+    "icon": "/writing-2327700 1.png"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker",
+    "description": "Track your job applications and progress easily.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Application tracking",
+      "Status updates",
+      "Notes & reminders",
+      "Dashboard view"
+    ],
+    "icon": "/operation.png"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Toolkit",
+    "description": "Tools for freelancers to manage clients and proposals.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Proposal templates",
+      "Invoice generator",
+      "Client management",
+      "Analytics dashboard"
+    ],
+    "icon": "/portfolio.png"
+  },
+  {
+    "id": 8,
+    "name": "Ultimate Career Suite",
+    "description": "All-in-one package for job seekers and professionals.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "All premium tools",
+      "Unlimited downloads",
+      "Personal coaching",
+      "Priority support"
+    ],
+    "icon": "/Vector.png"
+  }
+]
