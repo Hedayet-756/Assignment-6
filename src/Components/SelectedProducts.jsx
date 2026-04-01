@@ -1,5 +1,6 @@
 import React from 'react';
 import SelectCard from './SelectCard';
+import { toast } from 'react-toastify';
 
 const SelectedProducts = ({selectedProducts, setSelectedProducts, prices, setPrices, setSelected}) => {
     const handleDeleteSelectedProduct = (product) => {
@@ -11,6 +12,12 @@ const SelectedProducts = ({selectedProducts, setSelectedProducts, prices, setPri
          setPrices(prices - product.price)
     }
 
+    const handleCheckout = () => {
+        setSelectedProducts([]);
+        setPrices(0);
+
+        toast.alert("Checkout Successful! Your cart has been cleared.");
+    }
 
     
 
@@ -40,8 +47,7 @@ const SelectedProducts = ({selectedProducts, setSelectedProducts, prices, setPri
                         <h1 className="font-bold text-3xl text-purple-700">${prices}</h1>
                     </div>
                     
-                    <button 
-                        onClick={() => setSelected("picked")} 
+                    <button onClick={handleCheckout} 
                         className="btn w-full bg-purple-600 hover:bg-purple-700 text-white border-none rounded-xl px-10 font-bold"
                     >
                         Proceed to Checkout
