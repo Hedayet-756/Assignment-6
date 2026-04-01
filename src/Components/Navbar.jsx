@@ -49,7 +49,7 @@ const NavBar = () => {
                 } */}
               </div>
               
-              <h2 className='hidden md:block text-3xl font-bold bg-linear-to-r from-purple-800 to-purple-500 bg-clip-text text-transparent ml-4'>Digitools</h2>
+              <h2 className='hidden md:block text-3xl font-bold bg-linear-to-r from-purple-800 to-pink-500 bg-clip-text text-transparent ml-4'>Digitools</h2>
             
             </span>
 
@@ -59,14 +59,14 @@ const NavBar = () => {
                   Links
                 }
               </ul>
-              <h2 className='text-3xl font-bold bg-linear-to-r from-purple-800 to-purple-500 bg-clip-text text-transparent ml-4 md:hidden '>Digitools</h2>
+              <h2 className='text-3xl font-bold bg-linear-to-r from-purple-800 to-pink-500 bg-clip-text text-transparent ml-4 md:hidden '>Digitools</h2>
                 
             </div>
 
             <div className='flex md:gap-3 lg:gap-4'>
-              <button><span><ShoppingCart></ShoppingCart></span></button>
-              <button>Login</button>
-              <button className='btn bg-linear- rounded-full'>Get Started</button>
+              <button className='cursor-pointer transition-all'><span><ShoppingCart></ShoppingCart></span></button>
+              <button className='cursor-pointer transition-all'>Login</button>
+              <button className='btn bg-linear-to-r from-purple-800 to-pink-500 rounded-full'>Get Started</button>
             </div>
             
             
