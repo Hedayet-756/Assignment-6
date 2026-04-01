@@ -30,7 +30,7 @@ const navigationData = [
   }
 ]
 
-const NavBar = () => {
+const NavBar = ({selectedProducts=[]}) => {
   const [open, setOpen] = useState(false)
 
   const Links = navigationData.map(route => <Link key={route.id} route={route}></Link>)
@@ -64,7 +64,7 @@ const NavBar = () => {
             </div>
 
             <div className='flex md:gap-3 lg:gap-4'>
-              <button className='cursor-pointer transition-all'><span><ShoppingCart></ShoppingCart></span></button>
+              <button className='cursor-pointer transition-all flex items-center relative group'><ShoppingCart></ShoppingCart>{selectedProducts.length > 0 &&  <span className='absolute -top-2.5 -right-3 bg-red-600 text-white text-[11px] font-bold h-5 w-5 flex items-center justify-center rounded-full shadow-lg'>{selectedProducts.length}</span>}</button> 
               <button className='cursor-pointer transition-all'>Login</button>
               <button className='btn bg-linear-to-r from-purple-800 to-pink-500 rounded-full text-white'>Get Started</button>
             </div>

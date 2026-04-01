@@ -5,6 +5,8 @@ import Banner from './Components/Banner'
 import Advertise from './Components/Advertise'
 import DigitalTools from './Components/DigitalTools'
 import { useEffect, useState } from 'react'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -20,16 +22,18 @@ function App() {
   .catch(err => console.log("Data load error:", err));},[]);
 
   const [prices, setPrices] = useState(0);
+  const [selectedProducts, setSelectedProducts] = useState([]);
 
 
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></Navbar>
     <Banner></Banner>
     <Advertise></Advertise>
     <div className='m-10'>
-      <DigitalTools products={products} setProducts={setProducts} prices={prices} setPrices={setPrices} ></DigitalTools>
+      <DigitalTools products={products} setProducts={setProducts} prices={prices} setPrices={setPrices} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} ></DigitalTools>
     </div>
+    <ToastContainer></ToastContainer>
 
     
     </>

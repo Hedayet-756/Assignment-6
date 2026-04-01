@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import TotalProducts from './TotalProducts';
 import SelectedProducts from './SelectedProducts';
 
-const DigitalTools = ({products, prices, setPrices}) => {
+const DigitalTools = ({products, prices, setPrices, selectedProducts, setSelectedProducts}) => {
     console.log(products.length);
 
     const [selected, setSelected] = useState("picked");
-    const [selectedProducts, setSelectedProducts] = useState([]);
 
 
     return (
@@ -15,7 +14,7 @@ const DigitalTools = ({products, prices, setPrices}) => {
             <p className='font-semibold text-[16px] text-[#627382] items-center'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
             <div className='flex justify-center items-center gap-4'>
                 <button onClick={() => setSelected("picked")} className={`btn ${selected === "picked" ? "bg-linear-to-r from-purple-500 to-pink-500 text-white font-bold": ""} rounded-full `}>Products</button>
-                <button onClick={() => setSelected("selected")} className={`btn ${selected === "selected" ? "bg-linear-to-r from-purple-500 to-pink-500 text-white font-bold" : ""} rounded-full`}>cart {selectedProducts.length}</button>
+                <button onClick={() => setSelected("selected")} className={`btn ${selected === "selected" ? "bg-linear-to-r from-purple-500 to-pink-500 text-white font-bold" : ""} rounded-full`}>cart {selectedProducts.length > 0 && <span>{selectedProducts.length}</span>}</button>
             </div>
 
             {

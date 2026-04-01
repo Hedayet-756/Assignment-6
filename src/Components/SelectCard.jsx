@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SelectCard = () => {
+const SelectCard = ({product, handleDeleteSelectedProduct}) => {
     return (
         <div>
             

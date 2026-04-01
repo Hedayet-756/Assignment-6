@@ -10,7 +10,8 @@ const Card = ({product, selectedProducts, setSelectedProducts, prices, setPrices
 
 const handleChoosePlayer = () => {
     console.log("Buy now Button Clicked")
-    const isAlreadySelected = selectedProducts.find(p => p.id === product.id);
+    const isAlreadySelected = selectedProducts.find(p => String(p.id) === String(product.id));
+    console.log(isAlreadySelected)
     if(isAlreadySelected) {
         toast.error("Already selected!");
         return;
@@ -24,23 +25,6 @@ const handleChoosePlayer = () => {
     setSelectedProducts([...selectedProducts, product])
     };
 
-
-// const handleChoosePlayer = () => {
-//     // ডুপ্লিকেট সিলেকশন আটকাতে চাইলে এই চেকটি যোগ করতে পারেন
-//     const isAlreadySelected = selectedProducts.find(p => p.id === product.id);
-//     if(isAlreadySelected) {
-//         toast.error("Already selected!");
-//         return;
-//     }
-
-//     // স্টেট আপডেট
-//     setPrices(prices + price); // প্রপসের মাধ্যমে আসা ফাংশন কল
-//     setIsChoose(true);         // বাটন ডিসেবল করার জন্য
-    
-//     // ডাটা স্টোর ও মেসেজ
-//     setSelectedProducts([...selectedProducts, product]);
-//     toast.success(`${name} added to cart`);
-// };
     
     return (
         <div className="card bg-base-100 shadow-md border border-gray-100 p-5 h-full flex flex-col justify-between">
