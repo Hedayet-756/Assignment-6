@@ -14,14 +14,12 @@ const Banner = () => {
                 
                 <div className='space-y-5'>
                     <h1 className='text-4xl font-bold'>Supercharge Your <br /> Digital Workflow</h1>
-                    <p className='font-semibold text-[16px] text-[#627382]'>Access premium AI tools, design assets, templates, and productivity <br />
-                    software—all in one place. Start creating faster today. <br />
-                    Explore Products</p>
+                    <p className='font-semibold text-[16px] text-[#627382]'>Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products</p>
                 </div>
 
                 <div className='flex justify-start gap-4'>
                     <button className='btn bg-linear-to-r from-purple-500 to-pink-500 rounded-full'>Explore Products</button>
-                    <span className='btn btn-outline flex rounded-full'>
+                    <span className='btn btn-outline flex rounded-full border border-purple-800'>
                         <img src="../../src/assets/Play.png" alt="" />
                         <p className='font-semibold text-[16px] text-purple-700'>Watch Demo</p>
                     </span>
